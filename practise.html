@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 180px;
+            height: 300px;
+            background-image: url('img/img2.png');
+            background-size: 100% 100%;
+        }
+        .btn{
+            width: 50px;
+            height: 30px;
+            background-color: red;
+            color: rgb(10, 10, 10);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box" id="box">
+
+    </div>
+    <div class="btn" onclick="bosa()">
+        bos
+    </div>
+    <div class="btn" onclick="bosa1()">
+        bosgin
+    </div>
+
+    <script>
+        function bosa(){
+            let a=document.querySelector('#box')
+            a.style.backgroundImage="url('img/img3.png')"
+        }
+        function bosa1(){
+            let a=document.querySelector('#box')
+            a.style.backgroundImage="url('img/img4.png')"
+        }
+    </script>
+</body>
+</html>

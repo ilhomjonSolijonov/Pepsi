@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style..css">
+    <title>Pepsi</title>
+</head>
+<body>
+    <div class="asos">
+        <div class="head">
+            <div class="logo">
+                <div class="logi-child">
+                    <img src="img/img1.png" alt="">
+                </div>
+            </div>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    Products
+                </li>
+                <li>
+                    What's news
+                </li>
+                <li>
+                    Newslatter
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="main-left">
+                <div class="left-up">
+                    <h3 style="width: 90%;margin-left: 10%;color: #fff; height: 20%;display: flex;align-items: center;">THAT'S LIKE</h3>
+                    <h1 style=" width: 90%;margin-left: 10%; color: #fff;height: 60%;font-size: 100px;font-weight: 900;">I LIKE <br> <span class="main-h1">PEPSI</span></h1>
+                    <p style="width: 70%;margin-left: 10%; color: #fff;height: 20%;">Dolores  fugiat, neque ipsum obcaecati eius assumenda vitae maiores natus quia accusamus sed consequuntur quibusdam blanditiis. Tempora, necessitatibus.</p>
+                </div>
+                <div class="left-down">
+                    <div class="button">
+                        <button>View all Products</button>
+                    </div>
+                    <div class="cans">
+                        <div class="can1" onclick="bossa()">
+
+                        </div>
+                        <div class="can2" onclick="bossa2()">
+
+                        </div>
+                        <div class="can3" onclick="bossa3()">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="big-can" id="can1">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start code java-script -->
+
+    <script>
+        function bossa(){
+            let a=document.querySelector('#can1')
+            a.style.backgroundImage="url('img/img2.png')" 
+            let fon1 = document.querySelector('.asos')
+            fon1.style.backgroundColor='#0061BF' 
+            let head1=document.querySelector('.main-h1') 
+            head1.innerHTML='PEPSI'  
+        }
+        function bossa2(){
+            let b=document.querySelector('#can1')
+            b.style.backgroundImage="url('img/img3.png')"     
+            let fon2 = document.querySelector('.asos')
+            fon2.style.backgroundColor='pink' 
+            let head2=document.querySelector('.main-h1') 
+            head2.innerHTML='LAYM'
+        }
+        function bossa3(){
+            let c=document.querySelector('#can1')
+            c.style.backgroundImage="url('img/img4.png')"
+            let fon3 = document.querySelector('.asos')
+            fon3.style.backgroundColor='rgb(10, 10, 10)'
+            let head3=document.querySelector('.main-h1') 
+            head3.innerHTML='DARK'        
+        }  
+    </script>
+</body>
+</html>
